@@ -35,7 +35,7 @@ func stuffizer(s *discordgo.Session, m *discordgo.MessageCreate, trigger Trigger
         mute = true
         override = true
     case "unmute":
-        mute = true
+        mute = false
     }
 
     return !mute || override
