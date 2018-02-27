@@ -63,7 +63,7 @@ func getDB(dbFile string) ([]Trigger, error) {
     db := []Trigger{}
     yamlFile, err := ioutil.ReadFile(dbFile)
     if err != nil {
-        return db, fmt.Errorf("yamlFile.Get err #%v ", err)
+        return db, fmt.Errorf("yamlFile.Get err #%v", err)
     }
     err = yaml.Unmarshal(yamlFile, &db)
     if err != nil {
